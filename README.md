@@ -1,7 +1,7 @@
 # AutomaticLyricsGenerationAI
 
 This code will read and learn from lyrics ingested as input in a text file.
-It will create a Markov Chain with current work and probabilities to go to another word. A first order Chain. 
+It will create a Markov Chain containing words and probabilities to go to another word. A first order chain. 
 We could build another order chain by adjusting parameter *pharselenght*
 The it will create a song based (lenght specififed) on these chains and with some weighted probability of the lenght of each lyrics' line.
 
