@@ -1,14 +1,13 @@
 # AutomaticLyricsGenerationAI
 
 This code will read and learn from lyrics ingested as input in a text file.
-It will create a Pandas Dataframe consisting of a Markov Chain containing words and probabilities to go to another word. A first order chain. 
-We could build another order chain by adjusting parameter *pharselenght*
-The it will create a song based (lenght specififed) on these chains and with some weighted probability of the lenght of each lyrics' line.
+It will create a Pandas Dataframe consisting of a Markov Chain containing words and probabilities to go to another word. A first order chain. DF will be built upon Python Dict of word to word occurences. (We could build another order chain by adjusting parameter *pharselenght*). 
+It will create a song based (lenght specififed) on these chains and with some weighted probability of the lenght of each lyrics' line.
 
 It basically defines and uses these functions:
 
 **openandread**
-Get the text file with the lyrics. In my example: a text file containing all lyrics from some **Drake Albums + lyrics from Frank Ocean album** . You need to specify the path of the text file when you call the function. See examples below
+Get the text file with the lyrics. In my example: a text file containing all lyrics from some *Drake Albums + lyrics from Frank Ocean album* . You need to specify the path of the text file when you call the function. See examples below
 
 **readlyrics**
 Reads the lyrics from the file and create a Python list of all the words.
