@@ -138,7 +138,7 @@ def finalsong(songl):
 
 #Main Program
 
-lyr = openandread('C:\\Users\\dmanerob\\Downloads\\Hiphop.txt')
+lyr = openandread('C:\\SampleLyrics.txt')
 lyrlist = readlyrics(lyr)
 lymar = markovchain(lyrlist)
 lyrics = buildlyrics(lymar,300)
