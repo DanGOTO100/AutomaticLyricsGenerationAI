@@ -35,13 +35,12 @@ probability, ex- text file has a 5% probability to have a line of 5 words, etc..
 
 #An example of how to use:
 ```
-#Main Program
 
-lyr = openandread('C:\\Users\\dmanerob\\Downloads\\Hiphop.txt')
+lyr = openandread('C:\\SampleLyrics.txt')
 lyrlist = readlyrics(lyr)
-lymar = markovchain(lyrlist)
-lyrics = buildlyrics(lymar,300)
-estructuredlyrics = finalsong(lyrics)
+lymarkov = markovchain(lyrlist)
+lyrics = buildlyrics(lymarkov,300)  #300 words lyrics
+Estructuredlyrics = finalsong(lyrics)
 ```
 
 In my example, ingeting the lyrics from a couple of **Drake albums + Frank Ocean album (Channel Orange)**, this is a sample of what it returns:
@@ -55,7 +54,6 @@ sayin but its fireworks taking pictures to let go go
 go i know you not 
 in his yellow  goose  yeah its just done nails  done oh you got a house 
 what am i just be throwin understand  i make it 
-...
-``
+```
 
 
